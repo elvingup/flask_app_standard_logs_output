@@ -16,8 +16,9 @@ def hello():
 
 @app.route("/about")
 def about():
-	  app.logger.info("Accessed '/about' route")
-        return "Ola, voce acessou a pagina sobre: <br> Eu sou o dev <br> "
+	app.logger.info("Accessed '/about' route")
+    return "Ola, voce acessou a pagina sobre: <br> Eu sou o dev <br> "
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
